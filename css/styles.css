@@ -771,3 +771,11 @@ img {
 .footer-wrapper {
   padding-top: 72px;
 }
+
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-form .mail {
+  display: flex;
+}
