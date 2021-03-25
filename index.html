@@ -418,9 +418,8 @@
                     <p> <span class="accent">Web</span>Studio</p>
                 </a>
                     <address class="adress">
-                        <!-- <p>г. Киев, пр-т Леси Украинки,26</p> -->
                         <ul class="adress-list list">
-                            <li class="item"><a href="" class="footer-link">г. Киев, пр-т Леси Украинки,26</a></li>
+                            <li class="item"><a href="" class="footer-link">г. Киев, пр-т Леси Украинки, 26</a></li>
                             <li class="item"><a href="mailto:info@example.com" class="footer-link mail">info@example.com</a></li>
                             <li class="item"><a href="tel:+380991111111" class="footer-link tel">+38 099 111 11 11</a></li>
                         </ul>
@@ -476,16 +475,22 @@
             <div class="footer-wrapper footer-form">
                 <p class="invite">Подпишитесь на рассылку</p>
                 <div class="mail">
-                    <form>
-                        <label>
-                            <input type="email" name="email" placeholder="E-mail">
-                        </label>
+                    <form class="form">
+                        <div class="form-field">
+                            <label>
+                                <input class="form-input" type="email" name="email" placeholder="E-mail">
+                            </label>
+                        </div>
+                            <button type="submit" class="button btn-footer">Подписаться
+                            <div class="icon-send">
+                                <svg  class="icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#footer-btn"></use>
+                                </svg>
+                            </div>
+                            </button>
                     </form>
-                    <button class="btn-footer">Подписаться</button>
                 </div>
-                
             </div>
-
         </div>
     </footer>
 
