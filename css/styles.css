@@ -744,6 +744,7 @@ img {
 
 .adress-list {
   padding-left: 0px;
+  width: 231px;
 }
 
 .adress-list .item:not(:last-child) {
