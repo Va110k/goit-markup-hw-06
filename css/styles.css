@@ -693,6 +693,92 @@ img {
   fill: #000000;
 }
 
+.modal-form .form {
+  display: flex;
+  flex-direction: column;
+
+  width: 448px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-text {
+  margin-top: 40px;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.modal-form .form-field {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.modal-form .form-input {
+  margin: 0;
+  padding: 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-form .form-label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+
+.modal-form .comment-input {
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  margin-bottom: 20px;
+}
+
+.modal-form .comment-input::placeholder {
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field.policy {
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
+}
+
+.policy .agreement {
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
+.btn-modal-send {
+  display: flex;
+  align-self: center;
+
+  padding: 10px 55px;
+
+  font-weight: 700;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 /* footer */
 
 .footer {
@@ -706,9 +792,6 @@ img {
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer-section {
   margin-right: 70px;
 }
 
@@ -744,7 +827,7 @@ img {
 
 .adress-list {
   padding-left: 0px;
-  width: 231px;
+  /* width: 231px; */
 }
 
 .adress-list .item:not(:last-child) {
@@ -774,15 +857,15 @@ img {
   margin-left: 93px;
 }
 
-.form-field {
+.footer-form .form-field {
   margin-right: 12px;
 }
 
-.form {
+.footer-form .form {
   display: flex;
 }
 
-.form-input {
+.footer-form .form-input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -800,7 +883,7 @@ img {
   outline: none;
 }
 
-.form-input::placeholder {
+.footer-form .form-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
@@ -810,8 +893,6 @@ img {
   position: relative;
 
   padding: 10px 62px 10px 29px;
-  min-width: 200px;
-  height: 50px;
 
   font-weight: 700;
 }
