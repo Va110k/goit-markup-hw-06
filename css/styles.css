@@ -789,6 +789,15 @@ img {
   border-radius: 4px;
   background-color: var(--header-footer-background-color);
   padding-left: 16px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .form-input::placeholder {
