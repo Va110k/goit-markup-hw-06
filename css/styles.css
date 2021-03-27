@@ -814,6 +814,8 @@ textarea {
   align-items: center;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
+
+  cursor: pointer;
 }
 
 .policy .agreement {
