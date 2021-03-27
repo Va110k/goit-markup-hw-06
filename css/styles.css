@@ -797,15 +797,54 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.policy .checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .form-field.policy {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
 }
 
 .policy .agreement {
+  margin-left: 4px;
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+
+.checkbox-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 3px;
+  margin-right: 7px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.checkbox:checked + .checkbox-icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+}
+
+.policy .checkbox:focus + .checkbox-icon {
+  border-color: var(--accent-color);
 }
 
 .btn-modal-send {
