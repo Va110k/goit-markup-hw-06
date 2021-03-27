@@ -524,7 +524,8 @@ img {
   transition-timing-function: var(--timing-function);
 }
 
-.project-link:hover .project-overlay {
+.project-link:hover .project-overlay,
+.project-link:focus .project-overlay {
   transform: translateY(0);
 }
 
@@ -575,7 +576,6 @@ img {
 
 .projects-list .item {
   width: 370px;
-  /* width: calc((100% - 90px) / 3); */
   margin-right: 30px;
   margin-bottom: 30px;
 
