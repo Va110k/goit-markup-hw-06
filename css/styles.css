@@ -819,7 +819,6 @@ textarea {
 }
 
 .policy .agreement {
-  margin-left: 4px;
   text-decoration-line: underline;
   color: var(--accent-color);
 }
@@ -962,8 +961,12 @@ textarea {
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  color: var(--primary-background-color);
   background-color: var(--header-footer-background-color);
   padding-left: 16px;
+
+  font-size: 18px;
+  line-height: 1.19;
 
   transition-property: border-color;
   transition-duration: 250ms;
@@ -983,12 +986,15 @@ textarea {
 }
 
 .btn-footer {
-  position: relative;
   border: none;
 
   padding: 10px 62px 10px 29px;
 
   font-weight: 700;
+}
+
+.btn-field {
+  position: relative;
 }
 
 .icon-send {
